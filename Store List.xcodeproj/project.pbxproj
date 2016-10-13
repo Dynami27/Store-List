@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		AFF9CF081DAC06EA00FAF511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF071DAC06EA00FAF511 /* main.m */; };
 		AFF9CF0B1DAC06EA00FAF511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF0A1DAC06EA00FAF511 /* AppDelegate.m */; };
-		AFF9CF0E1DAC06EA00FAF511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF0D1DAC06EA00FAF511 /* ViewController.m */; };
 		AFF9CF111DAC06EA00FAF511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF9CF0F1DAC06EA00FAF511 /* Main.storyboard */; };
 		AFF9CF131DAC06EA00FAF511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF9CF121DAC06EA00FAF511 /* Assets.xcassets */; };
 		AFF9CF161DAC06EA00FAF511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF9CF141DAC06EA00FAF511 /* LaunchScreen.storyboard */; };
 		AFF9CF211DAC06EA00FAF511 /* Store_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF201DAC06EA00FAF511 /* Store_ListTests.m */; };
 		AFF9CF2C1DAC06EA00FAF511 /* Store_ListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF2B1DAC06EA00FAF511 /* Store_ListUITests.m */; };
+		AFF9CF3B1DAC07C200FAF511 /* StoreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF3A1DAC07C200FAF511 /* StoreListTableViewController.m */; };
+		AFF9CF3E1DAC08D600FAF511 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF3D1DAC08D600FAF511 /* Store.m */; };
+		AFF9CF441DAC2C2700FAF511 /* StoreDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF431DAC2C2700FAF511 /* StoreDetailsTableViewController.m */; };
+		AFF9CF471DAD5DBB00FAF511 /* AddStoresListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF461DAD5DBB00FAF511 /* AddStoresListViewController.m */; };
+		AFF9CF531DAE855C00FAF511 /* StoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF521DAE855C00FAF511 /* StoreItemsViewController.m */; };
+		AFF9CF561DAEA87800FAF511 /* StoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9CF551DAEA87800FAF511 /* StoreItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,6 @@
 		AFF9CF071DAC06EA00FAF511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFF9CF091DAC06EA00FAF511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFF9CF0A1DAC06EA00FAF511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFF9CF0C1DAC06EA00FAF511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AFF9CF0D1DAC06EA00FAF511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFF9CF101DAC06EA00FAF511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFF9CF121DAC06EA00FAF511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF9CF151DAC06EA00FAF511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,18 @@
 		AFF9CF271DAC06EA00FAF511 /* Store ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Store ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF9CF2B1DAC06EA00FAF511 /* Store_ListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store_ListUITests.m; sourceTree = "<group>"; };
 		AFF9CF2D1DAC06EA00FAF511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF9CF391DAC07C200FAF511 /* StoreListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreListTableViewController.h; sourceTree = "<group>"; };
+		AFF9CF3A1DAC07C200FAF511 /* StoreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreListTableViewController.m; sourceTree = "<group>"; };
+		AFF9CF3C1DAC08D600FAF511 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		AFF9CF3D1DAC08D600FAF511 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		AFF9CF421DAC2C2700FAF511 /* StoreDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailsTableViewController.h; sourceTree = "<group>"; };
+		AFF9CF431DAC2C2700FAF511 /* StoreDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailsTableViewController.m; sourceTree = "<group>"; };
+		AFF9CF451DAD5DBB00FAF511 /* AddStoresListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStoresListViewController.h; sourceTree = "<group>"; };
+		AFF9CF461DAD5DBB00FAF511 /* AddStoresListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStoresListViewController.m; sourceTree = "<group>"; };
+		AFF9CF511DAE855C00FAF511 /* StoreItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItemsViewController.h; sourceTree = "<group>"; };
+		AFF9CF521DAE855C00FAF511 /* StoreItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItemsViewController.m; sourceTree = "<group>"; };
+		AFF9CF541DAEA87800FAF511 /* StoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItem.h; sourceTree = "<group>"; };
+		AFF9CF551DAEA87800FAF511 /* StoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +118,19 @@
 			children = (
 				AFF9CF091DAC06EA00FAF511 /* AppDelegate.h */,
 				AFF9CF0A1DAC06EA00FAF511 /* AppDelegate.m */,
-				AFF9CF0C1DAC06EA00FAF511 /* ViewController.h */,
-				AFF9CF0D1DAC06EA00FAF511 /* ViewController.m */,
+				AFF9CF3C1DAC08D600FAF511 /* Store.h */,
+				AFF9CF3D1DAC08D600FAF511 /* Store.m */,
+				AFF9CF391DAC07C200FAF511 /* StoreListTableViewController.h */,
+				AFF9CF3A1DAC07C200FAF511 /* StoreListTableViewController.m */,
+				AFF9CF421DAC2C2700FAF511 /* StoreDetailsTableViewController.h */,
+				AFF9CF431DAC2C2700FAF511 /* StoreDetailsTableViewController.m */,
+				AFF9CF451DAD5DBB00FAF511 /* AddStoresListViewController.h */,
+				AFF9CF461DAD5DBB00FAF511 /* AddStoresListViewController.m */,
 				AFF9CF0F1DAC06EA00FAF511 /* Main.storyboard */,
+				AFF9CF511DAE855C00FAF511 /* StoreItemsViewController.h */,
+				AFF9CF521DAE855C00FAF511 /* StoreItemsViewController.m */,
+				AFF9CF541DAEA87800FAF511 /* StoreItem.h */,
+				AFF9CF551DAEA87800FAF511 /* StoreItem.m */,
 				AFF9CF121DAC06EA00FAF511 /* Assets.xcassets */,
 				AFF9CF141DAC06EA00FAF511 /* LaunchScreen.storyboard */,
 				AFF9CF171DAC06EA00FAF511 /* Info.plist */,
@@ -273,9 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF9CF0E1DAC06EA00FAF511 /* ViewController.m in Sources */,
+				AFF9CF471DAD5DBB00FAF511 /* AddStoresListViewController.m in Sources */,
+				AFF9CF441DAC2C2700FAF511 /* StoreDetailsTableViewController.m in Sources */,
+				AFF9CF561DAEA87800FAF511 /* StoreItem.m in Sources */,
 				AFF9CF0B1DAC06EA00FAF511 /* AppDelegate.m in Sources */,
+				AFF9CF531DAE855C00FAF511 /* StoreItemsViewController.m in Sources */,
 				AFF9CF081DAC06EA00FAF511 /* main.m in Sources */,
+				AFF9CF3B1DAC07C200FAF511 /* StoreListTableViewController.m in Sources */,
+				AFF9CF3E1DAC08D600FAF511 /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +537,7 @@
 				AFF9CF321DAC06EA00FAF511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFF9CF331DAC06EA00FAF511 /* Build configuration list for PBXNativeTarget "Store ListTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +546,7 @@
 				AFF9CF351DAC06EA00FAF511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFF9CF361DAC06EA00FAF511 /* Build configuration list for PBXNativeTarget "Store ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +555,7 @@
 				AFF9CF381DAC06EA00FAF511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
