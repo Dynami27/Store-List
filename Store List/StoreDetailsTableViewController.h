@@ -11,7 +11,7 @@
 #import "StoreListTableViewController.h"
 #import "StoreItem.h"
 #import "StoreItemsViewController.h"
-@interface StoreDetailsTableViewController : UITableViewController<addStoreItemsViewControllerDelegate>
+@interface StoreDetailsTableViewController : UITableViewController<AddStoreItemsViewControllerDelegate>
 {
     NSMutableArray *itemsForStore;
 }

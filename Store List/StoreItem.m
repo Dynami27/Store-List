@@ -10,4 +10,11 @@
 
 @implementation StoreItem
 
+-(id) initWithCoder:(NSCoder *) aDecoder {
+    self.name= [aDecoder decodeObjectForKey:@"name"];
+    return self;
+}
+-(void) encodeWithDecoder:(NSCoder *)coder{
+    [coder encodeObject:self.name forKey:@"name"];
+}
 @end

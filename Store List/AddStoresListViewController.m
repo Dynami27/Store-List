@@ -27,6 +27,8 @@
    Store *store=[[Store alloc]init];
     store.storeName=self.storeNameTextField.text;
     store.storeNumber=self.storeNumberTextField.text;
+    store.storeItems = [NSMutableArray array];
+    
     //store object
     [self.delegate addStoresListViewControllerDidStoresList:store];
     

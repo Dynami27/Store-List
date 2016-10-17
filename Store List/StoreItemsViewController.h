@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "StoreItem.h"
-@protocol addStoreItemsViewControllerDelegate <NSObject>
+@protocol AddStoreItemsViewControllerDelegate <NSObject>
 
 -(void) addStoreItemsVireControllerDidAddItem:(StoreItem *) storeItem;
 
@@ -17,6 +17,6 @@
 @interface StoreItemsViewController : UIViewController
 @property (nonatomic,weak) IBOutlet UITextField *addstoreItemTextField;
 
-@property (nonatomic, weak) id<addStoreItemsViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<AddStoreItemsViewControllerDelegate> delegate;
 
 @end

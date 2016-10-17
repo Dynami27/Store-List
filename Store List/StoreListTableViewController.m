@@ -18,29 +18,33 @@
     [super viewDidLoad];
     
     stores= [[NSMutableArray alloc]init];
-    Store *store1=[[Store alloc]init];
-    store1.storeName=@"Brooklyn Industries";
-    store1.storeNumber=@"1";
-    store1.storeItems=[[NSMutableArray alloc]init];
-    [stores addObject:store1];
+    NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
+    NSData *storesList=[userDefaults objectForKey:@"stores"];
+    Store *stores =  (Store *) [NSKeyedUnarchiver unarchiveObjectWithData:storesList];
     
-    Store *store2=[[Store alloc]init];
-    store2.storeName=@"Kroger";
-    store2.storeNumber = @"2";
-    store2.storeItems=[[NSMutableArray alloc]init];
-    [stores addObject:store2];
-    
-    Store *store3=[[Store alloc]init];
-    store3.storeName=@"Macys";
-    store3.storeNumber=@"3";
-    store3.storeItems=[[NSMutableArray alloc]init];
-    [stores addObject:store3];
-    
-    Store *store4=[[Store alloc]init];
-    store4.storeName=@"Nike";
-    store4.storeNumber=@"4";
-    store4.storeItems=[[NSMutableArray alloc]init];
-    [stores addObject:store4];
+//    Store *store1=[[Store alloc]init];
+//    store1.storeName=@"Brooklyn Industries";
+//    store1.storeNumber=@"1";
+//    store1.storeItems=[[NSMutableArray alloc]init];
+//    NSUserDefaults *userDefaults =[NSUserDefaults standardUserDefaults];
+//    [stores addObject:store1];
+//
+//    Store *store2=[[Store alloc]init];
+//    store2.storeName=@"Kroger";
+//    store2.storeNumber = @"2";
+//    store2.storeItems=[[NSMutableArray alloc]init];
+//    [stores addObject:store2];
+//    Store *store3=[[Store alloc]init];
+//    store3.storeName=@"Macys";
+//    store3.storeNumber=@"3";
+//    store3.storeItems=[[NSMutableArray alloc]init];
+//    [stores addObject:store3];
+//    
+//    Store *store4=[[Store alloc]init];
+//    store4.storeName=@"Nike";
+//    store4.storeNumber=@"4";
+//    store4.storeItems=[[NSMutableArray alloc]init];
+//    [stores addObject:store4];
    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -85,7 +89,7 @@
    
     if([segue.identifier isEqualToString:@"showitemsinstore"]) {
     NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
-    Store *store= stores  [indexPath.row];
+    Store *store = stores [indexPath.row];
     StoreDetailsTableViewController *controller= segue.destinationViewController;
     controller.selectedStore = store;
         
@@ -96,8 +100,16 @@
 
 }
 -(void) addStoresListViewControllerDidStoresList:(Store *)store {
+  
     [stores addObject:store];
-    [self.tableView reloadData];
+    NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
+    NSData *data=[NSKeyedArchiver archivedDataWithRootObject:stores ];
+    //NSMutableArray *stores=[[NSMutableArray alloc]init];
+   // [stores addObject:@"store"];
+    [userDefaults setObject:data forKey:@"stores"];
+    [userDefaults synchronize];
+    
+[self.tableView reloadData];
     
 }
 

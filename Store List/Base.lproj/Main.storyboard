@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -173,23 +174,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKM-2A-Fjf">
-                                <frame key="frameInset" minX="146" minY="200" width="46" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-Xj-tR8">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKM-2A-Fjf">
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveButtonPressed" destination="umB-yH-shC" eventType="touchUpInside" id="DIP-Vp-JAg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-Xj-tR8">
-                                <frame key="frameInset" minX="52" minY="117" width="257" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.71771237430000001" blue="0.3066350504" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WdQ-Xj-tR8" secondAttribute="trailing" constant="50" id="7F2-Rc-yKG"/>
+                            <constraint firstItem="EKM-2A-Fjf" firstAttribute="top" secondItem="WdQ-Xj-tR8" secondAttribute="bottom" constant="59" id="HO6-kJ-Csu"/>
+                            <constraint firstItem="WdQ-Xj-tR8" firstAttribute="leading" secondItem="IEK-BD-LNo" secondAttribute="leadingMargin" constant="36" id="NSu-U6-nA2"/>
+                            <constraint firstItem="EKM-2A-Fjf" firstAttribute="centerX" secondItem="IEK-BD-LNo" secondAttribute="centerX" id="QHo-k4-pDN"/>
+                            <constraint firstItem="WdQ-Xj-tR8" firstAttribute="top" secondItem="Gfu-XQ-ukJ" secondAttribute="bottom" constant="97" id="fKB-fG-QCd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="addstoreItemTextField" destination="WdQ-Xj-tR8" id="8lI-3P-Iau"/>
@@ -197,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vEB-Ij-D5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3556" y="-101"/>
+            <point key="canvasLocation" x="3556" y="-101.19940029985008"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ue5-DJ-PCA">

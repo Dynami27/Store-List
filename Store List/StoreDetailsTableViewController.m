@@ -43,9 +43,10 @@
     StoreItemsViewController *storeItemsViewController = segue.destinationViewController;
     storeItemsViewController.delegate =self;
 }
+
 -(void) addStoreItemsVireControllerDidAddItem:(StoreItem *)storeItem {
+
     [self.selectedStore.storeItems addObject:storeItem];
-    
     [self.tableView reloadData];
     
 }
@@ -53,6 +54,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     StoreItem *storeItem= self.selectedStore.storeItems[indexPath.row];
     cell.textLabel.text= storeItem.name;
+   
     return cell;
     
 }
